@@ -1,14 +1,15 @@
 function login()
 {
-	var x = document.forms["myForm"]["firstname"].value;
-	var y = document.forms["myForm"]["lastname"].value;
-    if (x == "" || y == "") 
+	var x = document.forms["myForm"]["Username"].value;
+    if (x == "") 
     {
         alert("Name must be filled out");  
     }   
     else
     {
-    	alert("Welcome!You have successfully logged in!");
+    	window.alert("Welcome " +document.getElementById("Username").value);
+
     }
 
 }
+
